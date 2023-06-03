@@ -9,7 +9,8 @@ int main()
      
 
     for(int i = 0; i <5 ; i++){
-        printf("Enter five marks:", marks[i]); 
+        printf("Enter five marks:", marks[i]);
+        break; 
     }
     for(int i =0; i <5 ; i++){
         scanf("%d", &marks[i]); //input five marks
