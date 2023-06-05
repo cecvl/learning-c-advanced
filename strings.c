@@ -3,7 +3,11 @@
 
 int main()
 {
-    char string[20];
-    printf("Enter the string: ");
-    fgets(string,20,randomwords.txt);
+    char str[] = "Program";
+
+    printf("%s", str[0]);
+    
+
+    return 0;
+
 }
