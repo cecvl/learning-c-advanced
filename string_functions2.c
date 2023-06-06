@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+/* this program takes two strings as inputs and prints out the larger 
+one 
+*/
 
 int main()
 {
