@@ -1,1 +1,1 @@
-}
+printf("%d\n", age[i]);
