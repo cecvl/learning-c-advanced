@@ -33,7 +33,10 @@ int main()
 }
 
 double display(struct student detailsfxn){
-  printf("Student Details: \nName: %s\nAge: %d", detailsfxn.name, detailsfxn.age);
+  //printf("Student Details:\n-----Name:%s-----\nAge:%d", detailsfxn.name, detailsfxn.age);
+    printf("Student Details:\n");
+    printf("-----Name: %-40s\n-----", detailsfxn.name);
+    printf("Age: %-40d\n", detailsfxn.age);
   
 };
 /*
