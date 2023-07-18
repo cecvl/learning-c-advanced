@@ -16,7 +16,7 @@ int main()
     }else if(marks>=70 && marks<=100){
         printf("Grade is A");
     }else{
-        printf("Enter valid marks");
+        printf("Please enter valid marks");
     }/* how do you return to the start of program after the last else 
     statement */
 
