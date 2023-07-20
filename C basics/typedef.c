@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-//example 1
-
-
-
-//example 2
+//use of typedef
 typedef struct menuitems{
     float amount;
     char name[20];
@@ -20,8 +16,8 @@ float calculator(float amount){
 
 int main()
 {
-    item1 item;
-    //item.price = 5.99;
+    item1 item; //declaring a variable of type item1.
+    
     printf("Enter amount of burgers: ");
     scanf("%f", &item.amount);
     printf("Total price: %.lf shillings", calculator(item.amount));

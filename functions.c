@@ -1,17 +1,22 @@
 #include <stdio.h>
+#include <time.h>
 
-int mult(int a, int b) //user defined fucntion
-{
-    return a*b;
+// Function declaration without parameters
+int get_current_time(void);
+
+int main() {
+    int current_time = get_current_time();
+    printf("Current time (seconds since epoch): %d\n", current_time);
+    return 0;
 }
 
-int add(int a, int b)
-{
-    return a + b;
+// Function definition without parameters
+int get_current_time(void) {
+    time_t t;
+    time(&t);
+    return (int)t;
 }
 
-void main ()
-{
-    printf("Product is %d",mult(5,10)); //calling a fucntion
-    printf("\n The sum is %d",add(4,45));
-}
+
+
+
