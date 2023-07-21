@@ -1,26 +1,60 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
 
 /* struct is a collection of variables (can be of different types) under a single name
 */
 
 
-struct Person{
+typedef struct{
     int age;
+    int passportnum;
+    char name[30];
     
-    }person1;
+    }person;
 
    int main()
     {
-        printf("Enter your age : ");
-        //fgets(person1.birthdate, sizeof(person1.birthdate), stdin);
-        scanf("%d", &person1.age);
-        //strcpy(person1.month, "October");
+        person first;
+
+        printf("\t\t\tWelcome dear customer\n\n");
+        printf("please proceed\n\n");
+
+        printf("Enter name: ");
+        fgets(first.name, sizeof(first.name), stdin);
+        printf("Enter age: ");
+        scanf("%d, %d", &first.age);
+        printf("Enter passport number: ");
+        scanf("%d", &first.passportnum);
+
+        FILE *age; //declare pointer to file
+        FILE *name;
+        FILE *passport;
         
-        printf("AGE %d", person1.age);
+        
+        age = fopen("age.dat","a+"); // age = fopen("age.txt","a+")
+        name = fopen("name.txt","a");
+        passport = fopen("passport.txt","a");
+         
 
+        if(age == NULL)   // not !(fopen) == NULL)
+        {
+            printf("Error opening file!");
+            
+        }else 
+        {
+            printf("Succesfully added.");
+        };
 
+        
+        fprintf(age, "%d\n", first.age);
+        fprintf(name, "%s", first.name);
+        fprintf(passport, "%d\n", first.passportnum);
+
+        fclose(age);
+        fclose(name);
+        fclose(passport);    
+        
         return 0;
     };
     
