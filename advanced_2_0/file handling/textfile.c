@@ -3,7 +3,8 @@
 
 typedef struct {
     int x;
-}number;
+}number; 
+//is declaring like this ok? help reduce LoC? 
 
 int main()
 {
