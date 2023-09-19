@@ -18,7 +18,7 @@ typedef struct{
         person first;
 
         printf("\t\t\tWelcome dear customer\n\n");
-        printf("please proceed\n\n");
+        //printf("please proceed\n\n");
 
         printf("Enter name: ");
         fgets(first.name, sizeof(first.name), stdin);
@@ -32,8 +32,8 @@ typedef struct{
         FILE *passport;
         
         
-        age = fopen("age.dat","a+"); // age = fopen("age.txt","a+")
-        name = fopen("name.txt","a");
+        age = fopen("age.dat","a");
+        name = fopen("name.txt","w");
         passport = fopen("passport.txt","a");
          
 
