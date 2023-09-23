@@ -1,11 +1,10 @@
 #include <stdio.h>
-/*This program calculates the total marks and the average mark in a
-students' exam
+/*This program takes input of five marks and calculates the average mark
 */
 
 int main()
 {
-    int marks[5], sum = 0 , _average;
+    int marks[5], sum = 0 , average;//average can be float data type
   
     printf("Enter five marks:");
     
@@ -17,11 +16,9 @@ int main()
     }
     printf("Total Marks is %d",sum);
 
-    _average = sum/5;  //calculate average
+    average = sum/5;  //calculate average
 
-    printf("\nAverage Mark is %d",_average); /* use of int data type because the decimals
-     are not needed in output
-    */
+    printf("\nAverage Mark is %d",average);
 
     return 0;
 }
