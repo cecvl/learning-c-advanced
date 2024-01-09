@@ -33,7 +33,7 @@ typedef struct{
         
         
         age = fopen("age.dat","a");
-        name = fopen("name.txt","w");
+        name = fopen("name.txt","a");
         passport = fopen("passport.txt","a");
          
 
